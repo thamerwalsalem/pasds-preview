@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="نسخة تجريبية لموقع الجمعية المهنية للإحصائيين وعلماء البيانات">
+<meta name="theme-color" content="#102139">
+<title>PASDS | الجمعية المهنية للإحصائيين وعلماء البيانات</title>
+<style>
+:root{color-scheme:light;--navy:#102139;--deep:#0a1628;--teal:#57ddca;--ink:#142843;--soft:#496071;--paper:#f4f8f8;--line:#d9e6e7;--width:1160px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font:1rem/1.8 Tahoma,Arial,sans-serif;background:var(--paper);color:var(--ink)}a{color:inherit;text-decoration:none}a:focus-visible,summary:focus-visible{outline:3px solid #1ca995;outline-offset:5px}h1,h2,h3,p,figure{margin:0}.wrap{width:min(var(--width),calc(100% - 3rem));margin-inline:auto}.skip{position:absolute;inset-inline-start:1rem;top:-10rem;background:white;padding:.5rem 1rem;z-index:5}.skip:focus{top:1rem}
+.dark{background:var(--navy);color:#fff}.top{border-bottom:1px solid #ffffff26}.top-inner,.foot-inner{min-height:84px;display:flex;align-items:center;justify-content:space-between;gap:1rem 2rem;flex-wrap:wrap}.brand{display:inline-flex;align-items:center;gap:.7rem;font-weight:bold}.brand svg{width:39px;height:39px;border-radius:11px;background:var(--teal);color:var(--deep);padding:6px}.brand bdi{font-size:1.12rem;letter-spacing:.13em}.nav{display:flex;gap:.5rem clamp(.85rem,3vw,2.25rem);flex-wrap:wrap;color:#dce7ef;font-size:.9rem}.nav a:hover,.foot-inner a:hover{color:var(--teal)}
+.hero{background:radial-gradient(ellipse at 15% 45%,#134753 0%,transparent 54%),var(--navy)}.hero-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(2rem,6vw,5rem);align-items:center;padding-block:clamp(3rem,8vw,7rem)}.eyebrow{display:inline-flex;align-items:center;gap:.55rem;color:var(--teal);font-size:.9rem;font-weight:bold}.eyebrow::before{content:"";width:.48rem;height:.48rem;background:currentColor;border-radius:50%}h1{font-size:clamp(2.1rem,4.45vw,3.85rem);line-height:1.32;max-width:13em;margin-block:.9rem 1.1rem}h1 span{color:var(--teal)}.hero p{color:#d8e6ed;max-width:34rem}.actions{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.7rem}.button{border:1px solid #ffffff55;border-radius:10px;padding:.65rem 1.05rem;font-weight:bold;font-size:.9rem}.button.primary{color:var(--deep);background:var(--teal);border-color:var(--teal)}.button:hover{box-shadow:0 0 0 2px var(--teal)}.visual{padding:1.05rem;border:1px solid #76dad442;border-radius:20px;background:#0b1f30d9;box-shadow:0 18px 45px #09152370}.visual-top{display:flex;justify-content:space-between;gap:.5rem;font-size:.84rem;color:#c6e5e5;padding:.2rem .25rem .7rem}.visual svg{width:100%;height:auto;display:block;background:#102a3c;border-radius:11px}.visual figcaption{color:#bed4dc;font-size:.78rem;padding:.7rem .25rem .05rem}
+section{padding-block:clamp(3rem,6vw,5.5rem);scroll-margin-top:1rem}.split{display:grid;grid-template-columns:.8fr 1.2fr;gap:1rem 4rem;align-items:start}.kicker{color:#126f64;font-size:.86rem;font-weight:bold;margin-bottom:.3rem}h2{font-size:clamp(1.8rem,3.6vw,2.7rem);line-height:1.35}h3{font-size:1.15rem;line-height:1.45}.lead,.card p,.faq p{color:var(--soft)}.lead{max-width:43rem}.band{background:#eaf2f3}.section-head{margin-bottom:1.5rem}.section-head .lead{margin-top:.45rem}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.card{padding:1.35rem;border:1px solid var(--line);border-radius:15px;background:white}.card svg{width:40px;height:40px;padding:9px;margin-bottom:.6rem;background:#dff7f3;color:#12796c;border-radius:10px}.card p{margin-top:.5rem}.member{background:var(--deep);color:white}.member .kicker{color:var(--teal)}.member .lead{color:#d1e0e9}.faq{display:grid;gap:.65rem;margin-top:1.3rem;max-width:52rem}.faq details{background:#14283e;border:1px solid #ffffff32;border-radius:10px;padding:.65rem .9rem}.faq summary{cursor:pointer;font-weight:bold}.faq p{color:#d1e0e9;padding-top:.45rem}.foot-inner{min-height:74px;color:#dce7ef;font-size:.84rem}.foot-inner a{text-decoration:underline;text-underline-offset:.25em}
+@media(max-width:790px){.hero-grid,.split{grid-template-columns:1fr}.visual{max-width:37rem}.cards{grid-template-columns:1fr}.top-inner{padding-block:1rem;gap:.6rem 1.5rem}.wrap{width:min(var(--width),calc(100% - 2rem))}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body id="top">
+<a class="skip" href="#main">تجاوز إلى المحتوى</a>
+<header class="top dark">
+  <div class="wrap top-inner">
+    <a href="#top" class="brand" aria-label="PASDS، الصفحة الرئيسية">
+      <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19h16M6 15v-4m6 4V7m6 8V4"/></svg>
+      <bdi>PASDS</bdi>
+    </a>
+    <nav class="nav" aria-label="التنقل الرئيسي">
+      <a href="#about">عن الجمعية</a><a href="#programs">المبادرات</a><a href="#membership">العضوية</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="hero dark" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">نسخة تجريبية للمراجعة</span>
+        <h1 id="hero-title">الجمعية المهنية <span>للإحصائيين وعلماء البيانات</span></h1>
+        <p>مساحة مهنية لتبادل المعرفة، وتنمية المهارات، وبناء الروابط بين العاملين والمهتمين بالإحصاء وعلم البيانات.</p>
+        <div class="actions"><a class="button primary" href="#about">تعرّف على الجمعية</a><a class="button" href="#programs">استكشف المبادرات</a></div>
+      </div>
+      <figure class="visual">
+        <div class="visual-top"><strong>من البيانات إلى الرؤى</strong><bdi>PASDS / 01</bdi></div>
+        <svg viewBox="0 0 480 290" aria-hidden="true">
+          <defs>
+            <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#285064" stroke-width="1"/></pattern>
+            <linearGradient id="area" x2="0" y2="1"><stop stop-color="#57ddca" stop-opacity=".45"/><stop offset="1" stop-color="#57ddca" stop-opacity="0"/></linearGradient>
+          </defs>
+          <rect x="40" y="30" width="400" height="220" fill="url(#grid)"/>
+          <path d="M45 213 103 183 158 195 216 136 272 151 329 92 383 109 436 56V250H45Z" fill="url(#area)"/>
+          <path d="M45 213 103 183 158 195 216 136 272 151 329 92 383 109 436 56" fill="none" stroke="#57ddca" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <g fill="#102a3c" stroke="#80f1df" stroke-width="2"><circle cx="45" cy="213" r="5"/><circle cx="103" cy="183" r="5"/><circle cx="158" cy="195" r="5"/><circle cx="216" cy="136" r="5"/><circle cx="272" cy="151" r="5"/><circle cx="329" cy="92" r="5"/><circle cx="383" cy="109" r="5"/><circle cx="436" cy="56" r="6"/></g>
+          <path d="M40 30v220h400" fill="none" stroke="#457083"/>
+        </svg>
+        <figcaption>رسم توضيحي ببيانات افتراضية</figcaption>
+      </figure>
+    </div>
+  </section>
+  <section id="about">
+    <div class="wrap split">
+      <div><p class="kicker">عن الجمعية</p><h2>مجتمع مهني حول البيانات</h2></div>
+      <p class="lead">تجمع الجمعية في هذا التصور بين الممارسين والباحثين والطلاب المهتمين بالإحصاء وعلم البيانات. وتركّز على تطوير الممارسة المهنية، وتبادل الخبرات، وتعزيز استخدام البيانات في اتخاذ القرار.</p>
+    </div>
+  </section>
+  <section id="programs" class="band">
+    <div class="wrap">
+      <div class="section-head"><p class="kicker">المبادرات</p><h2>مسارات مقترحة</h2><p class="lead">أفكار للبرامج والموارد التي يمكن أن يقدمها الموقع لأعضاء المجتمع المهني.</p></div>
+      <div class="cards">
+        <article class="card"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h16v14H4zM7 15l3-4 3 2 4-5"/></svg><h3>التطوير المهني</h3><p>ورش تطبيقية في تحليل البيانات، والنمذجة الإحصائية، وعرض النتائج بوضوح.</p></article>
+        <article class="card"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 6C9 4 6 4 3 5v14c3-1 6-1 9 1 3-2 6-2 9-1V5c-3-1-6-1-9 1zm0 0v14"/></svg><h3>الموارد المعرفية</h3><p>أدلة مختصرة ومراجع مهنية حول المنهجيات الإحصائية وجودة البيانات.</p></article>
+        <article class="card"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h16v11h-8l-5 4v-4H4zM8 10h8"/></svg><h3>اللقاءات المهنية</h3><p>حوارات حول تحديات العمل بالبيانات، وفرص للتعارف وتبادل التجارب بين التخصصات.</p></article>
+      </div>
+    </div>
+  </section>
+  <section id="membership" class="member">
+    <div class="wrap">
+      <div class="section-head"><p class="kicker">العضوية</p><h2>شارك في المجتمع المهني</h2><p class="lead">يعرض هذا القسم تصورًا أوليًا للعضوية. تفاصيل الفئات وشروط الانضمام قيد المراجعة.</p></div>
+      <div class="faq">
+        <details><summary>لمن تُوجّه العضوية في هذا التصور؟</summary><p>للإحصائيين وعلماء البيانات والمحللين والباحثين والطلاب المهتمين بالمجال.</p></details>
+        <details><summary>هل التسجيل متاح؟</summary><p>التسجيل غير متاح في النسخة التجريبية. ستُنشر طريقة التقديم بعد اعتماد تفاصيل العضوية.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="dark"><div class="wrap foot-inner"><span><bdi>PASDS</bdi> · نموذج تجريبي للمراجعة</span><a href="#top">العودة إلى الأعلى ↑</a></div></footer>
+</body>
+</html>
